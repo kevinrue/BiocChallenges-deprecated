@@ -1,9 +1,13 @@
-name: "my-website"
+name: "Bioconductor Challenges"
 output_dir: "docs"
 navbar:
-  title: "My Website"
+  title: "Bioconductor Challenges"
   left:
     - text: "Home"
       href: index.html
+    - text: "Tags"
+      href: tags.html
     - text: "About"
       href: about.html
+include: [".nojekyll"]
+exclude: ["LICENSE", "renv", "renv.lock"]
