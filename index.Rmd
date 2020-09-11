@@ -19,9 +19,9 @@ Until a dedicated code of conduct is developed for this particular initiative, p
 Each challenge is presented as follows:
 
 - `Topic:` A title that describes the topic in one sentence.
-- `Difficulty:` An estimated difficulty level: novice / intermediate / advanced.
+- `Difficulty:` An estimated difficulty level: `novice` / `intermediate` / `advanced.`
 - `Challenge leader(s):` At least GitHub username acting as point of contact for more information.
-- `Tags:` One or more tags from the [available tags](tags.html)
+- `Tags:` One or more tags from the [available tags](tags.html).
 - `Duration:` An reasonable minimum amount of time suggested to spend on the challenge.
 - `Notes:` Bullet points for additional information.
 

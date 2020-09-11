@@ -4,13 +4,13 @@ title: "Tags"
 
 Alphabetically sorted list of available tags.
 
-- Best Practices
-- Community
-- Containers
-- Database
-- ExperimentHub
-- Getting Started
-- GitHub Action
-- Visualization
-- Workflow
-- Writing Packages
+- `Best Practices`
+- `Community`
+- `Containers`
+- `Database`
+- `ExperimentHub`
+- `Getting Started`
+- `GitHub Action`
+- `Visualization`
+- `Workflow`
+- `Writing Packages`
