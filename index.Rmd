@@ -1,0 +1,30 @@
+---
+title: "Welcome!"
+---
+
+Welcome to the Bioconductor Challenges website!
+
+# Motivation
+
+This website collects a list of open challenges related to the Bioconductor project.
+
+# Code of Conduct
+
+This initiative is intended to be as inclusive as possible.
+Participants with all levels of expertise are welcome to contribute.
+Until a dedicated code of conduct is developed for this particular initiative, participants are expected to respect the [Code of Conduct for the BioC 2020 Conference](http://bioc2020.bioconductor.org/code_of_conduct.html).
+
+# Setup
+
+Each challenge is presented as follows:
+
+- `Topic:` A title that describes the topic in one sentence.
+- `Difficulty:` An estimated difficulty level: novice / intermediate / advanced.
+- `Challenge leader(s):` At least GitHub username acting as point of contact for more information.
+- `Tags:` One or more tags from the [available tags](tags.html)
+- `Duration:` An reasonable minimum amount of time suggested to spend on the challenge.
+- `Notes:` Bullet points for additional information.
+
+# Participation
+
+- Questions about individual challenges should be submitted as [issues on this repository](https://github.com/kevinrue/BiocChallenges/issues), tagging the challenge leader(s) in the issue.
