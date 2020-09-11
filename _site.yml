@@ -5,6 +5,10 @@ navbar:
   left:
     - text: "Home"
       href: index.html
+    - text: "Challenges"
+      menu:
+        - text: "The SingleCellExperiment Gallery"
+          href: challenge_singlecellexperiment_gallery.html
     - text: "Tags"
       href: tags.html
     - text: "About"

@@ -11,6 +11,7 @@ Alphabetically sorted list of available tags.
 - `ExperimentHub`
 - `Getting Started`
 - `GitHub Action`
+- `Single cell`
 - `Visualization`
 - `Workflow`
 - `Writing Packages`

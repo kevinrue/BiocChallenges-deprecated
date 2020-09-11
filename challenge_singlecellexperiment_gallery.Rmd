@@ -1,0 +1,29 @@
+---
+title: "Challenge: The SingleCellExperiment Gallery"
+---
+
+# Contribute to the `SingleCellExperiment` Gallery
+
+## Difficulty
+
+Intermediate.
+
+## Challenge leader(s)
+
+Aaron Lun - `@LTLA`
+
+## Tags
+
+- `Single cell`
+- `Visualization`
+
+## Duration
+
+A minimum of 1 hour is recommended for this challenge.
+
+## Notes
+
+- Fork the [original repository](https://github.com/LTLA/SCEGallery), working on a branch of your fork, and submitting a pull request when your contribution is ready for review.
+- You may contribute new R markdown files or edit existing ones.
+- When contributing a new chapter, we recommend reading an [existing chapter](https://github.com/LTLA/SCEGallery/blob/master/reduced-dimensions.Rmd), and using it as a template for your own contribution.
+  Contributions written in a style that matches current contents are more likely to be accepted, and more rapidly.
