@@ -9,3 +9,5 @@ navbar:
       href: tags.html
     - text: "About"
       href: about.html
+include: [".nojekyll"]
+exclude: ["LICENSE", "renv", "renv.lock"]
