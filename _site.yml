@@ -13,3 +13,6 @@ navbar:
       href: about.html
 include: [".nojekyll"]
 exclude: ["LICENSE", "renv", "renv.lock"]
+output:
+  html_document:
+    css: "style.css"
