@@ -1,0 +1,51 @@
+---
+title: "Challenge: The SingleCellExperiment Gallery"
+params:
+    topic: "Write GitHub Action workflow templates for Bioconductor packages."
+    difficulty: "advanced"
+    leaders:
+        value:
+            kevinrue: "Kevin Rue"
+    tags:
+        - "GitHub Action"
+        - "Best Practices"
+    duration: "2 hours"
+---
+
+```{r, include=FALSE}
+htmltools::tagList(rmarkdown::html_dependency_font_awesome())
+```
+
+# Topic
+
+`r params$topic`
+
+## Difficulty
+
+`r stringr::str_to_title(params$difficulty)`.
+
+## Challenge leader(s)
+
+```{r, echo=FALSE, results='asis'}
+for (github in names(params$leaders)) {
+    profile <- sprintf("http://github.com/%s", github)
+    cat(sprintf('- %s - <i class="fab fa-github"></i> [%s](%s)\n', params$leaders[[github]], github, profile))
+}
+```
+
+## Tags
+
+```{r, echo=FALSE, results='asis'}
+cat(sprintf("- `%s`\n", params$tags))
+```
+
+## Duration
+
+A minimum of `r params$duration` is recommended for this challenge.
+
+## Notes
+
+- Prior participation in a workshop on GHA is recommended to participate in this challenge.
+- As a pre-requisite to this challenge, the leader should set up a minimal package that would be used to test the workflows (note that there is another challenge that consists to write a minimal template Bioconductor package).
+- It may be useful to set up the GHA cache before the session, to speed things up. Though conversely, it may be a good opportunity to teach people what the cache is and how to set it up. Also, setting up a the GHA cache means that a GHA workflow already exists (chicken and egg).
+- Keep in mind that a GHA workflow can take 1h to run for a typical package (how much for a minimal package?)
