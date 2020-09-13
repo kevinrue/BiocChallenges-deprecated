@@ -5,3 +5,8 @@ title: "About This Website"
 # Contributors
 
 Kevin Rue-Albrecht - `@kevinrue` - is post-doctoral Computational Biologist at the [University of Oxford](https://www.imm.ox.ac.uk/people/kevin-rue-albrecht).
+
+# Get involved
+
+The source repository for this website is available at <https://github.com/kevinrue/BiocChallenges>.
+Feel free to fork the repository, submit pull requests, and get in touch!
