@@ -6,16 +6,24 @@ title: "Challenges"
 Automate this page to pick up information from all "challenge_*.Rmd" pages.
 -->
 
+```{r, echo=FALSE}
+valid_tags <- rmarkdown::yaml_front_matter("tags.Rmd")$params$tags
+```
+
+
 ```{r, echo=FALSE, results='asis'}
 challenge_rmds <- list.files(pattern = "challenge_.*.Rmd")
 challenge_htmls <- gsub("Rmd$", "html", challenge_rmds)
 challenges_list <- lapply(challenge_rmds, rmarkdown::yaml_front_matter)
-for (level in c("Novice", "Intermediate", "Advanced")) {
-    counter <- 0
+for (level in c("Novice", "Intermediate", "Advanced")) { # categorize challenges by difficulty level
+    counter <- 0 # display message if no challenge is currently available for that level
     cat(sprintf("## %s\n\n",
                 level))
     for (i in seq_along(challenge_rmds)) {
         challenge_info <- challenges_list[[i]]
+        # check validity of challenge tags
+        challenge_tags <- challenge_info$params$tags
+        stopifnot(all(challenge_tags %in% valid_tags))
         if (stringr::str_to_title(challenge_info$params$difficulty) == level) {
             cat(sprintf("- [%s](%s)\n",
                         challenge_info$params$topic,
@@ -24,7 +32,7 @@ for (level in c("Novice", "Intermediate", "Advanced")) {
         }
     }
     if (counter == 0) {
-        cat("No challenge available for this difficulty level.\n")
+        cat("No challenge currently available for this difficulty level.\n")
     }
     cat("\n")
 }

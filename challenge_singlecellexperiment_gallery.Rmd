@@ -13,9 +13,13 @@ params:
     duration: "1 hour"
 ---
 
-`r print(params)`
+```{r, include=FALSE}
+htmltools::tagList(rmarkdown::html_dependency_font_awesome())
+```
 
-# `r params$topic`
+# Topic
+
+`r params$topic`
 
 ## Difficulty
 
@@ -26,7 +30,7 @@ params:
 ```{r, echo=FALSE, results='asis'}
 for (github in names(params$leaders)) {
     profile <- sprintf("http://github.com/%s", github)
-    cat(sprintf("- @[%s](%s) - %s\n", github, profile, params$leaders[[github]]))
+    cat(sprintf('- %s - <i class="fab fa-github"></i> [%s](%s)\n', params$leaders[[github]], github, profile))
 }
 ```
 

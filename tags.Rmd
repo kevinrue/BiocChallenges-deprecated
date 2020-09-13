@@ -1,17 +1,22 @@
 ---
 title: "Tags"
+params:
+    tags:
+        - "Best Practices"
+        - "Community"
+        - "Containers"
+        - "Database"
+        - "ExperimentHub"
+        - "Getting Started"
+        - "GitHub Action"
+        - "Single cell"
+        - "Visualization"
+        - "Workflow"
+        - "Writing Packages"
 ---
 
 Alphabetically sorted list of available tags.
 
-- `Best Practices`
-- `Community`
-- `Containers`
-- `Database`
-- `ExperimentHub`
-- `Getting Started`
-- `GitHub Action`
-- `Single cell`
-- `Visualization`
-- `Workflow`
-- `Writing Packages`
+```{r, echo=FALSE, results='asis'}
+cat(sprintf("- %s\n", sort(params$tags)))
+```
