@@ -1,0 +1,28 @@
+---
+title: "Challenge"
+params:
+    topic: "Collate and analyze information from past conferences."
+    difficulty: "novice"
+    leaders:
+        value:
+            kevinrue: "Kevin Rue"
+    tags:
+        - "Accessibility"
+        - "Community"
+        - "Database"
+    duration: "1 hour(s)"
+---
+
+```{r, child="childs/challenge.Rmd"}
+```
+
+## Notes
+
+- Use information that is public, legal, and can be used to analyze trends and improve future events, e.g.
+  + Location of conference,
+  + Type of conference (main conference, European meeting)
+  + Speakers: gender, seniority, title
+- Analyses
+  + Gender balance (time trend)
+  + Seniority balance (time trend)
+  + Under-represented conference locations (accessibility)

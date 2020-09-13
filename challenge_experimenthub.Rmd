@@ -1,0 +1,27 @@
+---
+title: "Challenge"
+params:
+    topic: "Prepare a submission for the ExperimentHub."
+    difficulty: "advanced"
+    leaders:
+        value:
+            kevinrue: "Kevin Rue"
+    tags:
+        - "ExperimentHub"
+        - "Accessibility"
+    duration: "2 hour(s)"
+---
+
+```{r, child="childs/challenge.Rmd"}
+```
+
+## Notes
+
+- Prior participation in a workshop on the use of the `r BiocStyle::Biocpkg("ExperimentHub")` is recommended to participate in this challenge.
+- Suggestions of data sets:
+  + Mouse gastrulation data
+  + Tabula Muris (adding Tabula Muris Senis)
+  + Benchmarking study dataset (Lab of Holger Heyn, work presented last year by Elisabetta Mereu)
+- Consider making a contribution to one of the packages that use the `r BiocStyle::Biocpkg("ExperimentHub")`:
+  + `r BiocStyle::Biocpkg("scRNAseq")`
+  + `r BiocStyle::Biocpkg("TenXPBMCData")`

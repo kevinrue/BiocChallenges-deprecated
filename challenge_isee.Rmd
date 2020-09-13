@@ -1,0 +1,22 @@
+---
+title: "Challenge"
+params:
+    topic: "Contribute new panels for the iSEE package."
+    difficulty: "intermediate"
+    leaders:
+        value:
+            kevinrue: "Kevin Rue"
+    tags:
+        - "Visualization"
+    duration: "2 hour(s)"
+---
+
+```{r, child="childs/challenge.Rmd"}
+```
+
+## Notes
+
+- It is recommended to first participate in a workshop on the `r BiocStyle::Biocpkg("iSEE")` package.
+- This requires good knowledge of S4.
+- Suggested panels:
+  + Spatial transcriptomics visualizations.

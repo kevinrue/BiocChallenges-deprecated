@@ -1,0 +1,21 @@
+---
+title: "Challenge"
+params:
+    topic: "Brainstorm and write new Bioc workflows on specific topics."
+    difficulty: "intermediate"
+    leaders:
+        value:
+            kevinrue: "Kevin Rue"
+    tags:
+        - "Visualization"
+    duration: "2 hour(s)"
+---
+
+```{r, child="childs/challenge.Rmd"}
+```
+
+## Notes
+
+- Participants should already be familiar with some Bioconductor packages and their usage.
+  Ideally, they would already have used the package in a workflow, and be willing to demonstrate their workflow, using a public dataset.
+- This challenge naturally follows and complement the `r BiocStyle::Biocpkg("ExperimentHub")` challenge, using an existing or new data set(s) in the workflow.

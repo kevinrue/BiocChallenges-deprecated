@@ -2,6 +2,7 @@
 title: "Tags"
 params:
     tags:
+        - "Accessibility"
         - "Best Practices"
         - "Community"
         - "Containers"
