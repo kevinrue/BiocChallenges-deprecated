@@ -1,5 +1,5 @@
 ---
-title: "Challenge: The SingleCellExperiment Gallery"
+title: "Challenge"
 params:
     topic: "Write GitHub Action workflow templates for Bioconductor packages."
     difficulty: "advanced"
@@ -9,14 +9,12 @@ params:
     tags:
         - "GitHub Action"
         - "Best Practices"
-    duration: "2 hours"
+    duration: "2 hour(s)"
 ---
 
 ```{r, include=FALSE}
 htmltools::tagList(rmarkdown::html_dependency_font_awesome())
 ```
-
-# Topic
 
 `r params$topic`
 

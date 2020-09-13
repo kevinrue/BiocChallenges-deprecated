@@ -1,0 +1,51 @@
+---
+title: "Challenge"
+params:
+    topic: "Write Bioconductor package templates."
+    difficulty: "novice"
+    leaders:
+        value:
+            kevinrue: "Kevin Rue"
+    tags:
+        - "Getting Started"
+        - "Writing Packages"
+    duration: "1 hour(s)"
+---
+
+```{r, include=FALSE}
+htmltools::tagList(rmarkdown::html_dependency_font_awesome())
+```
+
+`r params$topic`
+
+## Difficulty
+
+`r stringr::str_to_title(params$difficulty)`.
+
+## Challenge leader(s)
+
+```{r, echo=FALSE, results='asis'}
+for (github in names(params$leaders)) {
+    profile <- sprintf("http://github.com/%s", github)
+    cat(sprintf('- %s - <i class="fab fa-github"></i> [%s](%s)\n', params$leaders[[github]], github, profile))
+}
+```
+
+## Tags
+
+```{r, echo=FALSE, results='asis'}
+cat(sprintf("- `%s`\n", params$tags))
+```
+
+## Duration
+
+A minimum of `r params$duration` is recommended for this challenge.
+
+## Notes
+
+- Make template package(s) available as a [GitHub template repository](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-template-repository).
+- Consider contributing template packages for the following categories:
+    + [Software](https://www.bioconductor.org/packages/devel/BiocViews.html#___Software)
+    + [Workflow](https://www.bioconductor.org/packages/devel/BiocViews.html#___Workflow)
+    + [AnnotationData](https://www.bioconductor.org/packages/devel/BiocViews.html#___AnnotationData)
+    + [ExperimentData](https://www.bioconductor.org/packages/devel/BiocViews.html#___ExperimentData)

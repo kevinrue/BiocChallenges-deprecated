@@ -10,6 +10,7 @@ params:
         - "Getting Started"
         - "GitHub Action"
         - "Single cell"
+        - "Unit testing"
         - "Visualization"
         - "Workflow"
         - "Writing Packages"
