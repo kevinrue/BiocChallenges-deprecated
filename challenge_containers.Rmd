@@ -1,0 +1,19 @@
+---
+title: "Challenge"
+params:
+    topic: "Create containers that include certain packages and/or datasets."
+    difficulty: "advanced"
+    leaders:
+        value:
+            kevinrue: "Kevin Rue"
+    tags:
+        - "Containers"
+    duration: "2 hour(s)"
+---
+
+```{r, child="childs/challenge.Rmd"}
+```
+
+## Notes
+
+- Consider creating Docker or Singularity containers.
