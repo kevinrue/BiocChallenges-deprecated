@@ -1,25 +1,44 @@
 ---
 title: "Challenge: The SingleCellExperiment Gallery"
+params:
+    topic: "Contribute to the `SingleCellExperiment` Gallery"
+    difficulty: "intermediate"
+    leaders:
+        value:
+            LTLA: "Aaron Lun"
+            kevinrue: "Kevin Rue"
+    tags:
+        - "Single cell"
+        - "Visualization"
+    duration: "1 hour"
 ---
 
-# Contribute to the `SingleCellExperiment` Gallery
+`r print(params)`
+
+# `r params$topic`
 
 ## Difficulty
 
-Intermediate.
+`r stringr::str_to_title(params$difficulty)`.
 
 ## Challenge leader(s)
 
-Aaron Lun - `@LTLA`
+```{r, echo=FALSE, results='asis'}
+for (github in names(params$leaders)) {
+    profile <- sprintf("http://github.com/%s", github)
+    cat(sprintf("- @[%s](%s) - %s\n", github, profile, params$leaders[[github]]))
+}
+```
 
 ## Tags
 
-- `Single cell`
-- `Visualization`
+```{r, echo=FALSE, results='asis'}
+cat(sprintf("- `%s`\n", params$tags))
+```
 
 ## Duration
 
-A minimum of 1 hour is recommended for this challenge.
+A minimum of `r params$duration` is recommended for this challenge.
 
 ## Notes
 
