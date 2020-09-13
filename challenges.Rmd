@@ -1,0 +1,11 @@
+---
+title: "Challenges"
+---
+
+<!--TODO
+Automate this page to pick up information from all "challenge_*.Rmd" pages.
+-->
+
+## Intermediate
+
+* [Contribute to the SingleCellExperiment Gallery](challenge_singlecellexperiment_gallery.html)
