@@ -1,14 +1,14 @@
 ---
 title: "Challenge"
 params:
-    topic: "Write Bioconductor package templates."
-    difficulty: "intermediate"
+    topic: "Write helper functions to automate aspects of Bioconductor package development."
+    difficulty: "advanced"
     leaders:
         value:
             kevinrue: "Kevin Rue"
     tags:
-        - "Getting Started"
         - "Writing Packages"
+        - "Best Practices"
     duration: "1 hour(s)"
 ---
 
@@ -43,9 +43,5 @@ A minimum of `r params$duration` is recommended for this challenge.
 
 ## Notes
 
-- Make template package(s) available as a [GitHub template repository](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-template-repository).
-- Consider contributing template packages for the following categories:
-    + [Software](https://www.bioconductor.org/packages/devel/BiocViews.html#___Software)
-    + [Workflow](https://www.bioconductor.org/packages/devel/BiocViews.html#___Workflow)
-    + [AnnotationData](https://www.bioconductor.org/packages/devel/BiocViews.html#___AnnotationData)
-    + [ExperimentData](https://www.bioconductor.org/packages/devel/BiocViews.html#___ExperimentData)
+- Consider contributing functionality for continuous integration/continuous development.
+- Look at [biocthis](https://github.com/lcolladotor/biocthis) first for ideas, enhancements, issues, inspiration, ...

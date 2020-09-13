@@ -34,7 +34,7 @@ for (github in names(params$leaders)) {
 ## Tags
 
 ```{r, echo=FALSE, results='asis'}
-cat(sprintf("- `%s`\n", params$tags))
+cat(sprintf("- `%s`\n", sort(params$tags)))
 ```
 
 ## Duration
