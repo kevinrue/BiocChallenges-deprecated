@@ -1,5 +1,6 @@
 ```{r, include=FALSE}
 htmltools::tagList(rmarkdown::html_dependency_font_awesome())
+stopifnot(require(magrittr))
 ```
 
 `r params$topic`
@@ -32,10 +33,16 @@ A minimum of `r params$duration` is recommended for this challenge.
 A list of GitHub repositories that participate in this challenge.
 
 ```{r, echo=FALSE, results='asis'}
+gh_stargazer_count <- function(repo) {
+    query <- gh::gh(sprintf("GET /repos/%s", repo))
+    query$stargazers_count
+}
 if (length(params$repositories)) {
     tab <- tibble::tibble(
-        repository = sprintf('<i class="fab fa-github"></i> [%s](%s)', params$repositories, sprintf("https://github.com/%s", params$repositories))
-    )
+        repository = sprintf('<i class="fab fa-github"></i> [%s](%s)', params$repositories, sprintf("https://github.com/%s", params$repositories)),
+        stargazers = vapply(params$repositories, gh_stargazer_count, numeric(1))
+    ) %>% 
+        dplyr::arrange(desc(stargazers))
     knitr::kable(tab)
 } else {
     cat("_No repository currently addresses this challenge._\n")
