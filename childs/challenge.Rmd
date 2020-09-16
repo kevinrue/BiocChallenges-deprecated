@@ -26,3 +26,20 @@ cat(sprintf("- `%s`\n", sort(params$tags)))
 ## Duration
 
 A minimum of `r params$duration` is recommended for this challenge.
+
+## Repositories
+
+A list of GitHub repositories that participate in this challenge.
+
+```{r, echo=FALSE, results='asis'}
+if (length(params$repositories)) {
+    tab <- tibble::tibble(
+        repository = sprintf('<i class="fab fa-github"></i> [%s](%s)', params$repositories, sprintf("https://github.com/%s", params$repositories))
+    )
+    knitr::kable(tab)
+} else {
+    cat("_No repository currently addresses this challenge._\n")
+    cat("\n")
+}
+```
+
