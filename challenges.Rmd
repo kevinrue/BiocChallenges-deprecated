@@ -2,6 +2,10 @@
 title: "Challenges"
 ---
 
+Each section presents a list of challenges for an estimated difficulty level, and the count of repositories that address this challenge.
+
+Click on the challenge title to find more details on the challenge page.
+
 <!--TODO
 Automate this page to pick up information from all "challenge_*.Rmd" pages.
 -->
@@ -16,24 +20,26 @@ challenge_rmds <- list.files(pattern = "challenge_.*.Rmd")
 challenge_htmls <- gsub("Rmd$", "html", challenge_rmds)
 challenges_list <- lapply(challenge_rmds, rmarkdown::yaml_front_matter)
 for (level in c("Novice", "Intermediate", "Advanced")) { # categorize challenges by difficulty level
-    counter <- 0 # display message if no challenge is currently available for that level
-    cat(sprintf("## %s\n\n",
-                level))
+    tab <- tibble::tibble(challenge = character(0), repositories = numeric(0))
+    cat(sprintf("## %s\n\n", level))
     for (i in seq_along(challenge_rmds)) {
         challenge_info <- challenges_list[[i]]
         # check validity of challenge tags
         challenge_tags <- challenge_info$params$tags
         stopifnot(all(challenge_tags %in% valid_tags))
         if (stringr::str_to_title(challenge_info$params$difficulty) == level) {
-            cat(sprintf("- [%s](%s)\n",
-                        challenge_info$params$topic,
-                        challenge_htmls[i]))
-            counter <- counter + 1
+            repository_page <- sprintf("[%s](%s)",
+                                       challenge_info$params$topic,
+                                       challenge_htmls[i])
+            repository_count <- length(challenge_info$params$repositories)
+            tab <- dplyr::bind_rows(tab,
+                                    tibble::tibble(challenge = repository_page, repositories = repository_count))
         }
     }
-    if (counter == 0) {
+    if (nrow(tab) == 0) {
         cat("No challenge currently available for this difficulty level.\n")
+    } else {
+        cat(knitr::kable(tab), sep = "\n")
     }
-    cat("\n")
 }
 ```
