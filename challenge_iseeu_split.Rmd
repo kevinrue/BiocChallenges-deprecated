@@ -1,0 +1,28 @@
+---
+title: "Challenge"
+params:
+    topic: "Refactor iSEEu panels into individual packages."
+    difficulty: "intermediate"
+    leaders:
+        value:
+            kevinrue: "Kevin Rue"
+    tags:
+        - "Visualization"
+    duration: "2 hour(s)"
+---
+
+```{r, child="childs/challenge.Rmd"}
+```
+
+## Notes
+
+- It is recommended to first participate in a workshop on the `r BiocStyle::Biocpkg("iSEE")` package.
+- This requires good knowledge of S4.
+- Suggested panels:
+  + `AggregatedDotPlot`
+  + `DynamicMarkerTable`
+  + `DynamicReducedDimensionPlot`
+  + `FeatureSetTable`
+  + `LogFCLogFCPlot`
+  + `MAPlot`
+  + `VolcanoPlot`
