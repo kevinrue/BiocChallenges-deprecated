@@ -18,8 +18,17 @@ params:
         - "Writing Packages"
 ---
 
+```{r, include=FALSE}
+library(magrittr)
+```
+
 Alphabetically sorted list of available tags.
 
-```{r, echo=FALSE, results='asis'}
-cat(sprintf("- %s\n", sort(params$tags)))
+```{r, echo=FALSE, warning=FALSE}
+tag_matrix <- matrix(sort(params$tags), ncol = min(5, floor(sqrt(length(params$tags)))))
+knitr::kable(
+    x = tag_matrix,
+    format = "html") %>% 
+    kableExtra::kable_styling()
 ```
+
