@@ -1,0 +1,21 @@
+---
+title: "Challenge"
+params:
+    topic: "Write a workflow (or package) that uses the basilisk package to run Python code."
+    difficulty: "advanced"
+    leaders:
+        value:
+            kevinrue: "Kevin Rue"
+            LTLA: "Aaron Lun"
+    tags:
+        - "Python"
+        - "Workflow"
+    duration: "1 hour(s)"
+---
+
+```{r, child="childs/challenge.Rmd"}
+```
+
+## Notes
+
+- Look at [velociraptor](https://github.com/lcolladotor/biocthis) for an example of package that uses [basilisk]() to run Python code.

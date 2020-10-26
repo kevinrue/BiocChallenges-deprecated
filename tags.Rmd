@@ -10,6 +10,7 @@ params:
         - "ExperimentHub"
         - "Getting Started"
         - "GitHub Action"
+        - "Python"
         - "Single cell"
         - "Unit testing"
         - "Visualization"
